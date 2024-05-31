@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesh Connected Solar Lights</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./display.css">
+    <link rel="stylesheet" href="./index.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="menu-bar">
+        <div class="logo">Lumos Maxima</div>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="https://docs.google.com/spreadsheets/d/1tUX6Gd6izygUR4p2QeGgRPJPPN_tz2DTDZB1G0do7Vg/edit#gid=0">Datasheet</a></li>
+            <li><a href="./index.html">Logout</a></li>
+        </ul>
+    </div>
+    <div class="dashboard">
+        <div class="container">
+            <button id="openMonitorBtn" class="open-monitor-btn">Open Digital Serial Monitor</button>
+            <div id="monitorModal" class="modal">
+                <div class="modal-content">
+                    <span id="closeMonitorBtn" class="close-btn">&times;</span>
+                    <h1>Digital Serial Monitor</h1>
+                    <div id="monitor" class="monitor">
+                        <div class="row" id="row1">Light 1: <span id="value1"></span> Amps</div>
+                        <div class="row" id="row2">Light 2: <span id="value2"></span> Amps</div>
+                        <div class="row" id="row3">Light 3: <span id="value3"></span> Amps</div>
+                        <div class="row" id="row4">Light 4: <span id="value4"></span> Amps</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="input-group">
+            <input placeholder="Enter light-card" type="text" id="searchInput">
+            <button class="submit-button" id="searchButton"><span>Search</span></button>
+          </div>
+        <div class="inner">
+            <!-- Light 1 -->
+            <div class="one light-card" id="light1">
+                <div class="border_box">
+                    <div class="current_value" id="currentValue_1"></div>
+                    <div class="led-bulb" id="1"></div>
+                    <div class="button_display">
+                        <div class="switch-holder">
+                            <div class="switch-label">
+                                <i class="fa fa-bluetooth-b"></i><span>Light-1</span>
+                            </div>
+                            <div class="switch-toggle">
+                                <input type="checkbox" id="checkbox_1">
+                                <label for="checkbox_1"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="status-card" id="status_1"></div>
+                </div>
+            </div>
+            <!-- Light 2 -->
+            <div class="one light-card" id="light2">
+                <div class="border_box">
+                    <div class="current_value" id="currentValue_2"></div>
+                    <div class="led-bulb" id="2"></div>
+                    <div class="button_display">
+                        <div class="switch-holder">
+                            <div class="switch-label">
+                                <i class="fa fa-bluetooth-b"></i><span>Light-2</span>
+                            </div>
+                            <div class="switch-toggle">
+                                <input type="checkbox" id="checkbox_2">
+                                <label for="checkbox_2"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="status-card" id="status_2"></div>
+                </div>
+            </div>
+            <!-- Light 3 -->
+            <div class="one light-card" id="light3">
+                <div class="border_box">
+                    <div class="current_value" id="currentValue_3"></div>
+                    <div class="led-bulb" id="3"></div>
+                    <div class="button_display">
+                        <div class="switch-holder">
+                            <div class="switch-label">
+                                <i class="fa fa-bluetooth-b"></i><span>Light-3</span>
+                            </div>
+                            <div class="switch-toggle">
+                                <input type="checkbox" id="checkbox_3">
+                                <label for="checkbox_3"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="status-card" id="status_3"></div>
+                </div>
+            </div>
+            <!-- Light 4 -->
+            <div class="one light-card" id="light4">
+                <div class="border_box">
+                    <div class="current_value" id="currentValue_4"></div>
+                    <div class="led-bulb" id="4"></div>
+                    <div class="button_display">
+                        <div class="switch-holder">
+                            <div class="switch-label">
+                                <i class="fa fa-bluetooth-b"></i><span>Light-4</span>
+                            </div>
+                            <div class="switch-toggle">
+                                <input type="checkbox" id="checkbox_4">
+                                <label for="checkbox_4"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="status-card" id="status_4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+    <script src="./display.js"></script>
+</body>
+</html>
